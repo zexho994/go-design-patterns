@@ -33,3 +33,17 @@ func (FurnitureFactor) getFurnitureCache(f string) Furniture {
 	}
 	return nil
 }
+
+// 静态工厂
+func GetFurnitureStatic(f string) Furniture {
+	if f == "chair" {
+		return chair{}
+	}
+	if f == "sofa" {
+		return sofa{}
+	}
+	if f == "table" {
+		return table{}
+	}
+	return nil
+}
