@@ -15,3 +15,21 @@ func (FurnitureFactor) getFurniture(f string) Furniture {
 	}
 	return nil
 }
+
+var c chair
+var t table
+var s sofa
+
+// 带缓存的工厂
+func (FurnitureFactor) getFurnitureCache(f string) Furniture {
+	if f == "chair" {
+		return c
+	}
+	if f == "sofa" {
+		return s
+	}
+	if f == "table" {
+		return t
+	}
+	return nil
+}
