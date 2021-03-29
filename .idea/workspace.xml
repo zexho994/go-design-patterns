@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74366d4d-dad7-4057-92f1-3b9023684fcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/go-design-patterns.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factory/furniture.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factory/furnitureFactor.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factory/furniture_leather.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factory/furniture_wood.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstractFactory/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstractFactory/furniture.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstractFactory/furnitureFactory.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstractFactory/furnitureLeather.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstractFactory/furnitureWood.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory/furnitureFactor.go" beforeDir="false" afterPath="$PROJECT_DIR$/factory/furnitureFactor.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -83,6 +83,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/abstract_factory" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -120,6 +121,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="factory demo" />
+    <MESSAGE value="带缓存的工厂" />
+    <MESSAGE value="静态工厂" />
+    <option name="LAST_COMMIT_MESSAGE" value="静态工厂" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -129,29 +134,33 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1160" y="474" key="#GOROOT/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616633785886" />
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1616812531547">
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1616814342017">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616812531547" />
-    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1616812531545">
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616814342017" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1616814342015">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.center/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616812531545" />
-    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1616812531543">
+    <state width="1878" height="305" key="GridCell.Tab.0.center/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616814342015" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1616814342015">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.left/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616812531543" />
-    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1616812531546">
+    <state width="1878" height="305" key="GridCell.Tab.0.left/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616814342015" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1616814342016">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="305" key="GridCell.Tab.0.right/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616812531546" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616814342016" />
     <state x="-1167" y="209" key="SettingsEditor" timestamp="1616808023513">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1167" y="209" key="SettingsEditor/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616808023513" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1616812497051">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1616815745538">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616812497051" />
+    <state width="500" height="445" key="SwitcherDM/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616815745538" />
+    <state x="-1154" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1616977812148">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1154" y="458" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3360.0.1440.900/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1616977812148" />
   </component>
 </project>
